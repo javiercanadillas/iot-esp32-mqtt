@@ -1,0 +1,5 @@
+adafruit-ampy==1.1.0
+click==8.1.1
+paho-mqtt==1.6.1
+pyserial==3.5
+python-dotenv==0.20.0

@@ -1,0 +1,5 @@
+src/*credentials*
+micropy.json
+venv/
+.vscode/
+.micropy/
