@@ -54,12 +54,10 @@ listener 1883
 
 Open the file `src/mqtt_config.json` and put there your computer IP. This is the IP of the MQTT server, the one you're device will be connecting to.
 
-Now, connect your device to your PC and copy with `ampy` the following files to your device:
+Now, connect your device to your PC and copy with `ampy` the files under `src/` to your device:
 
-```python
-ampy put src/boot.py
-ampy put src/credentials.json
-ampy put src/main.py
+```bash
+for f in "$(ls src/)"do; ampy put "src/$f"; done
 ```
 
 - `boot.py` contains the logic to connect your ESP32 to the WiFi network.

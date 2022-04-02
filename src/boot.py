@@ -2,7 +2,7 @@
 
 def get_credentials(filename: str):
     """Get WiFi SSID and password from JSON file"""
-    import ujson
+    import ujson, os`
     try:
         os.stat(filename)
         with open(filename, 'r') as f:
