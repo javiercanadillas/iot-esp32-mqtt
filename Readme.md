@@ -28,7 +28,7 @@ docker pull eclipse-mosquitto
 Then, spin up a new container using the image you just downloaded:
 
 ```bash
-docker run -d  --name mqtt -p 1883:1883 -p 9001:9001 -v $(pwd)mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+docker run -d  --name mqtt -p 1883:1883 -p 9001:9001 -v "$(pwd)/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf" eclipse-mosquitto
 ```
 
 And finally, enter the container and create a new topic in Mosquitto MQTT to test our client code:
