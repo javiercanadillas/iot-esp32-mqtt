@@ -60,9 +60,10 @@ Now, connect your device to your PC and copy with `ampy` the files under `src/` 
 for f in "$(ls src/)"do; ampy put "src/$f"; done
 ```
 
-- `boot.py` contains the logic to connect your ESP32 to the WiFi network.
+- `boot.py` contains the logic to connect your ESP32 to the WiFi network
 - `credentials.json` contains the SSID and password for your WLAN
-- `main.py` contains the main program to execute that implements a MicroPython MQTT cient.
+- `main.py` contains the main program to execute that implements a MicroPython MQTT cient
+- `mqtt_config.json` is the file you modified before
 
 ## Going further
 
